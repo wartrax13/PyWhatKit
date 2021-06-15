@@ -34,8 +34,8 @@ def check_window() -> NoReturn:
              "function will not work", "Pywhatkit")
 
 
-def sendwhatmsg_instantly(phone_no: str, message: str, wait_time: int = 20,
-                          browser: str = None, tab_close: bool = False) -> NoReturn:
+def sendwhatmsg_instantly(phone_no: str, message: str, wait_time: int = 15,
+                          browser: str = None, tab_close: bool = True) -> NoReturn:
     """Send WhatsApp Message Instantly"""
 
     if browser and browser.lower() not in ["chrome", "firefox", "brave", "opera"]:
